@@ -18,6 +18,11 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       devShells = {
+        # Defaults to postgresql
+        go-api = import ./shells/go-api.nix {
+          inherit pkgs;
+        };
+
         go-api-psql = import ./shells/go-api.nix {
           inherit pkgs;
           db = "postgres";

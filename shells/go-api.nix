@@ -1,6 +1,6 @@
 {
   pkgs,
-  db,
+  db ? "postgres",
 }: let
   # The snowflake driver is being pulled into the dependencies
   # and throws a panic because of CA cert failing when initialized.
