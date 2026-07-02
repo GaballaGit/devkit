@@ -32,6 +32,12 @@
           inherit pkgs;
           db = "sqlite";
         };
+
+        # too lazy to do other node versions / pkg managers rn
+        # will come back when I need them
+        node-wrangler = import ./shells/node-wrangler.nix {
+          inherit pkgs;
+        };
       };
     });
 }
