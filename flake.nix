@@ -33,10 +33,19 @@
           db = "sqlite";
         };
 
-        # too lazy to do other node versions / pkg managers rn
-        # will come back when I need them
+        # Web Dev with Node and Wrangler
         node-wrangler = import ./shells/node-wrangler.nix {
           inherit pkgs;
+        };
+
+        node-wrangler-yarn = import ./shells/node-wrangler.nix {
+          inherit pkgs;
+          packageManager = pkgs.yarn;
+        };
+
+        node-wrangler-pnpm = import ./shells/node-wrangler.nix {
+          inherit pkgs;
+          packageManager = pkgs.pnpm;
         };
 
         # Rust
