@@ -21,5 +21,9 @@ in
       echo "< ------------ >"
       echo "  Go API Shell  "
       echo "< ------------ >"
+      echo "go: ${pkgs.go.version}"
+      echo "air: ${pkgs.air.version}"
+      echo "migrate: ${db-migrate.version}"
+      echo
     '';
   }
