@@ -14,7 +14,7 @@ nix develop github:GaballaGit/devkit#go-api
 
 ### All Flakes
 
-```nix
+```
 # Backend Go
 go-api
 go-api-psql
@@ -22,4 +22,9 @@ go-api-sqlite
 
 # Node Development
 node-wrangler
+node-wrangler-pnpm
+node-wrangler-yarn
+
+# Rust
+rust
 ```
