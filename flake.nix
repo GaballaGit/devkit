@@ -38,6 +38,11 @@
         node-wrangler = import ./shells/node-wrangler.nix {
           inherit pkgs;
         };
+
+        # Rust
+        rust = import ./shells/rust.nix {
+          inherit pkgs;
+        };
       };
     });
 }
